@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/icon.css" />
+  <link rel="stylesheet" type="text/css" href="plugins/pagepiling/jquery.pagepiling.css" />
+  <link rel="stylesheet" href="plugins/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="plugins/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css?v=0.0016" />
+  <title></title>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="index.html" class="header__logo">
+        <img src="img/picture/logo.png" alt="" />
+      </a>
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a class="hoverLink" href="aboutUs.html">О нас</a>
+        </li>
+
+        <li class="header__nav-item">
+          <a class="hoverLink" href="products.html">Специальности</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="hoverLink" href="./news.html">Новости</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="hoverLink" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+      <a href="tel:88452426409" class="header__contact hoverLinkButton">8 (845) 242-64-09</a>
+    </div>
+  </div>
+</header>
+<div class="preloader">
+  <div class="preloader__wrapper">
+    <div class="preloader__item preloader__item--1"></div>
+    <div class="preloader__item preloader__item--2"></div>
+    <div class="preloader__item preloader__item--3"></div>
+  </div>
+</div>
+<div class="burgerMenu">
+  <button class="burgerMenu__button">
+    <div class="burgerMenu__button-wrapper">
+      <div class="burgerMenu__button-line half first"></div>
+      <div class="burgerMenu__button-line"></div>
+      <div class="burgerMenu__button-line half last"></div>
+    </div>
+  </button>
+  <ul class="burgerMenu__list">
+    <li class="burgerMenu__list-item"><a href="aboutUs.html">О нас</a></li>
+    <li class="burgerMenu__list-item"><a href="products.html">Специальности</a></li>
+    <li class="burgerMenu__list-item"><a href="./news.html">Новости</a></li>
+    <li class="burgerMenu__list-item"><a href="contacts.html">Контакты</a></li>
+    <li class="burgerMenu__list-item"><a href="tel:88452426409">8 (845) 242-64-09</a></li>
+  </ul>
+</div>
+
+<div id="pagepiling">
+  <section class="news pp-scrollable">
+    <div class="container">
+      <div class="news__wrapper">
+        <div class="breadcrumbs">
+          <p>Главная</p>
+          <p>Новости</p>
+        </div>
+        <h1 class="news__wrapper-title title">Новости</h1>
+        <div class="newsCards newsCards--page">
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__top">
+            <ul class="footer__list">
+              <li class="footer__list-item"><a class="hoverLink" href="index.html">О нас</a></li>
+              <li class="footer__list-item"><a class="hoverLink" href="products.html">Специальности</a></li>
+              <li class="footer__list-item"><a class="hoverLink" href="./news.html">Новости</a></li>
+              <li class="footer__list-item"><a class="hoverLink" href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+</div>
+
+<script src="plugins/swiper/swiper-bundle.min.js"></script>
+<script src="plugins/jquery/jquery-3.6.0.min.js"></script>
+<script src="plugins/jquery/jquery.mask.js"></script>
+<script src="plugins/fancybox/fancybox.js"></script>
+<script type="text/javascript" src="plugins/pagepiling/jquery.pagepiling.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=01d2e4d1-dbd2-422b-bbba-3046535e318c&amp;lang=ru_RU"
+        type="text/javascript"></script>
+<script src="js/ymapCustom.js?v=0.0001"></script>
+<script src="js/script.js?v=0.0016"></script>
+</body>
+</html>

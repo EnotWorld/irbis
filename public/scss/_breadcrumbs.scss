@@ -1,0 +1,40 @@
+.breadcrumbs {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+
+  p {
+    color: #ADB1B9;
+    font-weight: 400;
+    @include fluid(font-size, 16px, 18px);
+    &:last-child{
+      color: $dark-grey;
+    }
+    &:not(:first-child) {
+      padding-left: 19px;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #ADB1B9;
+      }
+    }
+
+
+  }
+  &--white{
+    p{
+
+      &:last-child{
+        color: $white;
+      }
+    }
+  }
+}

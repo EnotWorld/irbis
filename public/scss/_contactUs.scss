@@ -1,0 +1,185 @@
+.contactUs {
+  border-radius: 60px 60px 0px 0px;
+  background-color: $white;
+  .pp-tableCell{
+    vertical-align: bottom;
+  }
+  &--yellow{
+    background-color: $yellow;
+    .contactUs__form{
+      &-title{
+      }
+      &-input,&-textarea{
+        background-color: $white;
+        border: 1px solid $white;
+      }
+      &-input{
+        @include fluid(margin-top, 10px, 15px);
+
+        &:first-of-type{
+          @include fluid(margin-top, 15px, 20px);
+        }
+      }
+      &-text{
+        &:hover{
+
+          a{
+            color: $white;
+          }
+
+        }
+      }
+      margin-bottom: 30px;
+    }
+  }
+  
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -55px;
+
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    &-title {
+      color: $black;
+    }
+
+    &-input {
+      width: 100%;
+      border-radius: 20px;
+      border: 1px solid #4B5256;
+      color: $black;
+      @include fluid(padding-top, 15px, 20px);
+      @include fluid(padding-bottom, 15px, 20px);
+      @include fluid(padding-left, 20px, 30px);
+      @include fluid(padding-right, 20px, 30px);
+
+      &::placeholder {
+        color: $black;
+        @include fluid(font-size, 18px, 20px);
+        font-weight: 400;
+        line-height: 140%;
+      }
+
+      &:not(:first-of-type) {
+        @include fluid(margin-top, 15px, 20px);
+      }
+
+      &:first-of-type {
+        @include fluid(margin-top,25px,50px);
+      }
+    }
+
+    &-textarea {
+      border-radius: 20px;
+      border: 1px solid #4B5256;
+      color: $black;
+      @include fluid(margin-top, 15px, 20px);
+      @include fluid(padding-top, 12px, 17px);
+      @include fluid(padding-bottom, 15px, 20px);
+      @include fluid(padding-left, 20px, 30px);
+      @include fluid(padding-right, 20px, 30px);
+      @include fluid(height, 120px, 141px);
+      resize: none;
+
+      &::placeholder {
+        color: $black;
+        @include fluid(font-size, 18px, 20px);
+        font-weight: 400;
+        line-height: 140%;
+      }
+    }
+
+    &-btn {
+      @include fluid(margin-top, 25px, 30px);
+      display: flex;
+      justify-content: center;
+      height: 68px;
+      padding: 14px 20px;
+      align-items: center;
+      gap: 10px;
+      border-radius: 29px;
+      background: #4B5256;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+
+      p {
+        z-index: 1;
+        transition: color .38s ease-in-out;
+        color: white;
+        @include fluid(font-size, 16px, 20px);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+      }
+
+      &:hover {
+        &:before {
+          left: 0;
+        }
+
+        p {
+          color: #4B5256;
+        }
+      }
+
+      &:before {
+        position: absolute;
+        content: '';
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: $yellow;
+        border-radius: 20px;
+
+        transition: all .38s ease-in-out;
+      }
+
+    }
+
+    &-text {
+      @include fluid(margin-top, 7px, 10px);
+      color: #838894;
+      @include fluid(font-size, 14px, 16px);
+      font-weight: 400;
+      line-height: 130%;
+      text-align: center;
+      width: 70%;
+      align-self: center;
+
+      &:hover {
+        a {
+          color: $yellow;
+          text-decoration: underline;
+        }
+      }
+
+      a {
+        color: $black;
+        text-decoration: none;
+        transition: color .38s ease-in-out, text-decoration 1.38s ease-in-out;
+      }
+    }
+
+  }
+
+  &__image {
+    @include fluid(height, 338px, 577px);
+    position: relative;
+    @include fluid(width, 800px, 968px);
+    margin-top: auto;
+    img {
+      object-fit: contain;
+      position: absolute;
+      object-position: bottom;
+
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

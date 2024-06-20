@@ -1,0 +1,21 @@
+.modal {
+  border-radius: 30px;
+  h2 {
+    @include fluid(font-size, 40px,30px)
+  }
+  &__question {
+    @include fluid(margin-top, 20px,15px)
+  }
+  &__answers {
+    @include fluid(margin-top, 18px,15px);
+
+    display: flex;
+    justify-content: space-between;
+    a {
+      border-radius: 30px;
+      background-color: $yellow;
+      @include fluid(padding,30px,20px);
+      @include fluid(font-size, 25px,18px)
+    }
+  }
+}

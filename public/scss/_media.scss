@@ -1,0 +1,1648 @@
+@media screen and (max-width: 1320px) {
+  .aboutUsInfo {
+    &__content {
+      &-buttons {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .contactUs {
+    &--yellow {
+
+      .footer {
+        @include fluid(margin-top, 150px, 0px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  footer {
+    height: auto !important;
+  }
+  .newsDetail{
+    overflow: auto;
+  }
+  .contacts {
+    &--page {
+      .contacts {
+        &__wrapper {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .contactUs {
+    border-radius: unset;
+
+    &--yellow {
+      .contactUs {
+        &__wrapper {
+          justify-content: center;
+        }
+      }
+    }
+
+  }
+  .possibilities {
+    margin-top: 50px;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .footer {
+      .container {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .partnersAll {
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+  .stagesWork {
+    border-radius: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__wrapper {
+      margin-bottom: 0;
+    }
+  }
+  .courierContent {
+    border-radius: unset;
+
+    &__wrapper {
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+  .courier {
+    &__wrapper {
+      height: auto;
+    }
+
+    &__left {
+      border-radius: 60px 0 0 0;
+      height: auto;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    &__right {
+      border-radius: 0 60px 0 0;
+      height: auto;
+      padding-top: 50px;
+    }
+  }
+  .products {
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+      .products {
+        &__wrapper {
+          //margin-bottom: 0;
+
+        }
+      }
+    }
+    &__wrapper {
+      margin-bottom: 0;
+
+    }
+    .footer {
+      position: relative;
+    }
+    &Background {
+      height: auto;
+    }
+    &__cards {
+    }
+    &__card {
+      width: 100%;
+      &Box {
+        width: 100%;
+        gap: 10px;
+      }
+    }
+
+    .footer {
+      margin-bottom: 0;
+      transform: none;
+    }
+  }
+  html {
+    overflow-y: scroll;
+  }
+  .workingFor {
+    padding-bottom: 50px;
+    border-radius: unset;
+
+    &--footer {
+      padding-bottom: 0;
+    }
+
+    &__wrapper {
+      padding-top: 50px;
+
+    }
+  }
+  .whyChooseUs {
+    position: relative;
+    border-radius: unset;
+
+    &__wrapper {
+      margin-bottom: 500px;
+    }
+  }
+  .aboutUsInfo {
+    padding-top: 50px;
+    height: auto;
+
+    &__wrapper {
+      margin-top: 0;
+    }
+
+    &__left {
+      margin-bottom: 50px;
+    }
+  }
+  .companyMission {
+    border-radius: unset;
+
+    &__left {
+      margin-bottom: 30px;
+    }
+  }
+  .innovativeTechnologies {
+    border-radius: unset;
+
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .facilities {
+    border-radius: unset;
+    overflow: auto;
+    margin-bottom: 0;
+
+    &__right {
+      margin-bottom: 30px;
+    }
+  }
+  .partners {
+    overflow: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__wrapper {
+      margin-bottom: 0;
+    }
+
+    .newsCard {
+      &:before {
+        z-index: 0;
+      }
+
+      &__btn {
+        &:before {
+          display: none;
+        }
+      }
+
+      &__text, &__title {
+        z-index: 1;
+      }
+    }
+  }
+  .contacts {
+    background-color: $dark-grey;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contactUs {
+    padding-top: 30px;
+
+    &__form {
+      &-text {
+        margin-top: 10px;
+
+        &:hover {
+
+
+          a {
+            color: #2D3E50;
+            text-decoration: none;
+          }
+        }
+
+      }
+    }
+
+    &__wrapper {
+      margin-top: 0;
+    }
+  }
+  .aboutCompany {
+    border-radius: unset;
+    position: relative;
+    height: 700px;
+
+    &__wrapper {
+      padding-top: 30px;
+    }
+  }
+  .solutions {
+    border-radius: unset;
+    padding-bottom: 30px;
+
+    &__wrapper {
+      margin-top: 0;
+      padding-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .whyChooseUs {
+    &__wrapper {
+      margin-bottom: 450px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contacts {
+    &--page {
+      .contacts {
+        &__wrapper {
+          gap: 10px;
+          padding-top: 80px;
+          margin-bottom: 0;
+
+          &-box {
+            flex-direction: column;
+          }
+        }
+
+        &__content {
+          margin-top: 0;
+
+          &-items {
+            gap: 10px;
+          }
+
+          &-box {
+            margin-top: 9px;
+            gap: 10px;
+          }
+        }
+
+        &__map {
+          margin-top: 10px;
+        }
+      }
+    }
+
+  }
+  .possibilities {
+    &__card {
+      height: 450px;
+
+      &-title {
+        font-size: 24px;
+      }
+
+      &-img {
+        width: 200px;
+      }
+
+      &-text {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+  .partnersAll {
+    margin-top: 100px;
+
+    &__wrapper {
+      &-title {
+        margin-top: 10px;
+      }
+    }
+
+    &__items {
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-between;
+    }
+
+    &__item {
+    }
+  }
+  .stagesWork {
+    padding-top: 15px;
+
+    &__wrapper {
+      &-title {
+        font-size: 24px;
+      }
+    }
+
+    &__content {
+      margin-top: 15px;
+    }
+
+    &__item {
+      padding: 15px;
+      gap: 6px;
+
+      &-number {
+        font-size: 24px;
+      }
+
+      &-text {
+        font-size: 14px;
+      }
+    }
+  }
+  .courierContent {
+    display: flex;
+
+    &__wrapper {
+      margin-top: 30px;
+    }
+
+    &__card {
+      height: auto;
+      width: 100%;
+      padding: 20px;
+
+      &-title {
+        font-size: 24px;
+      }
+
+      &-text {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+
+      &--darkGrey {
+        .courierContent__card-title {
+          margin-top: 10px;
+        }
+
+        .courierContent__card-img {
+          display: block;
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      &-img {
+        display: none;
+      }
+    }
+  }
+  .courier {
+    padding-top: 50px;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__left, &__right {
+      border-radius: unset;
+      width: 100%;
+    }
+
+    &__left {
+      &-text {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    }
+
+    &__right {
+      padding: 0;
+      background-color: $dark-grey;
+
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+  .products {
+
+    &:first-child {
+      padding-top: 100px;
+    }
+    &__wrapper{
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+    &__card {
+
+      &Box {
+        flex-direction: column;
+        gap: 5px;
+        padding: 20px;
+      }
+      &-img, &-box {
+        width: 100%;
+      }
+
+      &-box {
+        gap: 10px;
+      }
+
+      &:nth-child(even) {
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      &--darkGrey {
+        .products__card-btn {
+          &:hover {
+            border-color: $white;
+          }
+        }
+      }
+
+      &-btn {
+        width: 100%;
+        justify-content: center;
+
+        &:hover {
+          border-color: $black;
+        }
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+  .breadcrumbs {
+    flex-wrap: wrap;
+  }
+  .newsDetail {
+
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+    &__content {
+      width: 100%;
+
+      .title {
+        font-size: 20px;
+      }
+
+      img {
+        margin-top: 15px;
+      }
+
+      time {
+        margin-top: 10px;
+      }
+
+      p {
+        margin-top: 5px;
+        font-size: 14px;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      ol, ul {
+        margin-top: 5px;
+
+        li {
+          font-size: 14px;
+        }
+      }
+
+      h3 {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+
+    }
+
+    &__backNews {
+      margin-top: 15px;
+    }
+  }
+  .news {
+    padding-top: 55px;
+
+    .newsCards {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+
+      &__column {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+
+    .newsCard {
+      background-color: #4B5256;
+      border: 1px solid $white;
+      height: 350px;
+      width: 100%;
+
+      &__bg {
+        z-index: 1;
+        opacity: 1;
+      }
+
+      &__title, &__text, &__date-number, &__date-month {
+        color: $white;
+        z-index: 1;
+      }
+
+      &__title {
+        font-size: 18px;
+      }
+
+      &__text {
+        font-size: 14px;
+      }
+
+      &__btn {
+        &:before {
+          display: none;
+        }
+      }
+
+      &:before {
+        z-index: 0;
+        width: 200%;
+        height: 200%;
+        right: -50%;
+        bottom: -50%;
+      }
+    }
+  }
+
+  .workingFor {
+    &--footer {
+      padding-bottom: 0;
+
+      .workingFor {
+        &__left {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          align-items: center;
+
+
+          &-buttons {
+            gap: 10px;
+            margin-top: 0;
+          }
+          &-button{
+            margin-right: 0;
+          }
+        }
+
+        &__swiper {
+          width: 100%;
+        }
+
+        &__wrapper {
+          flex-direction: column;
+        }
+      }
+    }
+
+    &__left {
+      &-button {
+        &:hover {
+          .icon-arrow {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+  .btnHover {
+    &:hover {
+      padding-right: 70px;
+      padding-left: 30px;
+
+      .btnHover__icon {
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        justify-content: center;
+        padding-left: 0;
+
+        span {
+          transform: rotate(-45deg);
+
+        }
+      }
+    }
+
+    &--transparent {
+      &:hover {
+        .btnHover__icon {
+          background-color: transparent;
+
+        }
+      }
+    }
+  }
+  .facilitiesCard {
+    &:hover {
+      transform: scale(1);
+    }
+  }
+  .btn {
+    &:hover {
+      background: $white;
+
+      .btn__icon {
+        display: none;
+      }
+
+      .btn__text {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &--grey {
+      &:hover {
+        background-color: #2D3E50;
+        color: $white;
+      }
+    }
+  }
+  .companyMission {
+    &__wrapper {
+      flex-direction: column;
+      margin-bottom: 30px;
+      gap: 0;
+    }
+
+    &__left {
+      width: 100%;
+
+      &-column {
+        &:first-child {
+          margin-top: 0;
+        }
+
+        margin-top: 0;
+        width: 100%;
+      }
+
+      &-item {
+        object-fit: cover;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &--large {
+          width: 100%;
+        }
+      }
+    }
+
+    &__right {
+      margin-top: 0;
+      width: 100%;
+
+      .title {
+        width: 100%;
+      }
+    }
+  }
+  .aboutUsInfo {
+    position: relative;
+
+    &__content {
+      &-buttons {
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      &-button {
+        margin-top: 0;
+      }
+    }
+
+    &__left {
+      width: 100%;
+    }
+
+    &__bg {
+      display: none;
+      //width: 172px;
+      //height: 172px;
+      //bottom: 0;
+      //top: unset;
+      //object-position: bottom right;
+    }
+  }
+  .whyChooseUs {
+    position: relative;
+    border-radius: unset;
+
+    &__wrapper {
+      margin-bottom: 450px;
+    }
+
+    &__heading {
+      flex-direction: column-reverse;
+    }
+  }
+  .footer {
+    border-radius: 20px 20px 0 0;
+
+    &__wrapper {
+      padding-top: 30px;
+    }
+
+    &__top {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    &__list {
+      justify-content: center;
+    }
+
+    &__list, &__bottom {
+      flex-wrap: wrap;
+      row-gap: 13px;
+    }
+
+    &__bottom {
+      gap: 15px;
+      justify-content: center;
+
+      &-left {
+        text-align: center;
+      }
+    }
+
+    &__list {
+      &-item {
+
+      }
+    }
+  }
+  .hoverLink {
+    &:before {
+      display: none;
+    }
+  }
+  .burgerMenu {
+    display: block;
+  }
+  .partners {
+    padding-top: 0;
+
+    &__wrapper {
+      margin-bottom: 30px;
+    }
+
+    &__top {
+      align-items: center;
+    }
+
+    &__nav {
+      &-icon {
+        width: 40px;
+        height: 40px;
+
+        &:hover {
+          .icon-arrow {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    &__news {
+      &-top {
+        flex-wrap: wrap;
+        gap: 15px;
+
+        .btn {
+          display: none;
+        }
+      }
+
+      &-bottom {
+        display: block;
+        margin: 20px auto 0 auto;
+      }
+
+      .newsCards {
+        grid-template-columns: 1fr;
+      }
+
+      .newsCard {
+        height: 350px;
+
+        &__bg {
+          z-index: 1;
+          opacity: 1;
+        }
+
+        &__title, &__text, &__date-number, &__date-month {
+          color: $white;
+          z-index: 1;
+        }
+
+        &__title {
+          font-size: 18px;
+        }
+
+        &__text {
+          font-size: 14px;
+        }
+
+        &:before {
+          z-index: 0;
+          width: 200%;
+          height: 200%;
+          right: -50%;
+          bottom: -50%;
+        }
+      }
+    }
+
+    &__slide {
+      height: 131.912px;
+
+      &:hover {
+        border-color: $black;
+
+        .partners__slide-img {
+          filter: grayscale(100%);
+        }
+      }
+    }
+  }
+
+  .innovativeTechnologies {
+    padding-top: 100px;
+    position: relative;
+    padding-bottom: 0;
+
+    &-img {
+      object-fit: cover;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+
+    &__wrapper {
+      padding-bottom: 50px;
+    }
+  }
+  .header {
+    z-index: 99;
+    background-color: $white;
+    width: 100%;
+    position: fixed;
+
+    &__nav, &__contact {
+      display: none;
+    }
+
+  }
+  .contactUs {
+    border: unset;
+
+    &__form {
+      &-input, &-textarea {
+        font-size: 16px;
+      }
+
+      &-btn {
+        border-radius: 20px;
+        height: 51px;
+
+        &:hover {
+          p {
+            color: $white;
+
+          }
+        }
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &__wrapper {
+      margin-top: 0;
+      padding-top: 0px;
+      flex-direction: column;
+    }
+
+    &__image {
+      display: none;
+    }
+  }
+  .contacts {
+    background-color: #4B5256;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &__content {
+      &-item {
+        gap: 1px;
+        width: 70%;
+      }
+
+      &-text {
+        font-size: 16px;
+      }
+
+      &-minTitle {
+        font-size: 12px;
+      }
+    }
+
+    &__wrapper {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      flex-direction: column;
+      gap: 30px;
+
+    }
+
+    &__content, &__map {
+      width: 100%;
+    }
+  }
+  .solutions {
+    padding-bottom: 0;
+
+    &__wrapper {
+      padding-top: 30px;
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+
+    &__slide {
+      .btn {
+        background-color: transparent;
+        border: 1px solid $black;
+
+        p {
+          color: $black;
+        }
+      }
+
+      &-title {
+        height: auto;
+        width: 100%;
+        font-size: 18px;
+      }
+
+      &:before {
+        display: none;
+      }
+
+      .solutions__slide-img {
+        margin-top: 5px;
+      }
+
+      .solutions__slide-link {
+        transform: translateY(0);
+      }
+    }
+
+    &__nav {
+      align-items: center;
+
+      &-icon {
+        width: 40px;
+        height: 40px;
+
+        &:hover {
+          .icon-arrow {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    &__top {
+      .btn {
+        background-color: $yellow;
+        height: 40px;
+
+        p {
+          color: #000;
+        }
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &__text {
+      width: 100%;
+      font-size: 14px;
+    }
+
+    &__item {
+      width: 100%;
+    }
+
+    &__title {
+      width: 70%;
+    }
+  }
+  .facilities {
+    border-radius: unset;
+    margin-bottom: 40px;
+
+    &__wrapper {
+      padding-bottom: 30px;
+    }
+
+    &__right {
+      margin-bottom: 0;
+    }
+  }
+  .aboutCompany {
+    border-radius: unset;
+    position: relative;
+    height: 680px;
+
+    .text {
+      font-size: 16px;
+    }
+
+    &__wrapper {
+      justify-content: space-between;
+    }
+
+    &__circle {
+      &--1 {
+        left: 141px;
+      }
+
+      &--2 {
+        left: 400px;
+      }
+
+      &--3 {
+        left: 595px;
+      }
+
+      &--7 {
+        left: 442px;
+      }
+
+      &--8 {
+        left: 531px;
+      }
+
+      &--9 {
+        left: 341px;
+      }
+
+      &--10 {
+        left: 555px;
+      }
+
+      &--11 {
+        left: 634px;
+      }
+
+      &--12 {
+        left: 691px;
+      }
+
+      &--4, &--5, &--6, &--13, &--14 {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 910px) {
+  .aboutCompany {
+    &__circles {
+      left: -46px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+  .aboutCompany {
+
+    &__circles {
+      left: -80px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .possibilities {
+    &__card {
+      height: 350px;
+    }
+
+    &__content {
+      flex-direction: column;
+
+      &-left, &-right {
+        width: 100%;
+      }
+    }
+  }
+  .partnersAll {
+    &__items {
+      margin-top: 15px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__item {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .products {
+    .title {
+      font-size: 25px;
+    }
+
+    &__cards {
+      margin-top: 20px;
+    }
+
+    &__card {
+      &-title {
+        font-size: 22px;
+      }
+
+      &-text {
+        font-size: 14px;
+      }
+
+      &-img {
+        height: 200px;
+      }
+
+      &-box {
+        gap: 6px;
+      }
+    }
+  }
+  .modal {
+    &__answers {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  .workingFor {
+    &__slide {
+      height: 346px;
+    }
+
+    &__wrapper {
+      flex-direction: column;
+      padding-top: 30px;
+    }
+
+    &__left {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-buttons {
+        margin-top: 0;
+      }
+    }
+
+    &__swiper {
+      width: 100%;
+      &-2 {
+        width: 100%;
+      }
+    }
+  }
+  .companyMission {
+    &__left {
+      &-item {
+        height: 200px;
+
+        &--large {
+          height: 235px;
+        }
+      }
+    }
+  }
+  .whyChooseUs {
+    height: 400px;
+
+    &--white {
+      height: 600px;
+    }
+
+    &__wrapper {
+      margin-bottom: 0;
+    }
+
+    &__heading {
+      margin-bottom: 300px;
+    }
+
+    &__circle {
+      &-big {
+        padding: 5px;
+
+      }
+
+      &-title {
+        font-size: 12px;
+      }
+
+      &-text {
+        font-size: 8px;
+      }
+
+      &-1 {
+        width: 159.3px;
+        height: 159.3px;
+      }
+
+      &-2 {
+        width: 138.6px;
+        height: 138.6px;
+        left: 155px;
+        top: 215px;
+      }
+
+      &-3 {
+        width: 129.3px;
+        height: 129.3px;
+        left: 253px;
+        top: 131px;
+      }
+
+      &-4 {
+        width: 129.3px;
+        height: 129.3px;
+        left: 328px;
+        top: 228px;
+      }
+
+      &-5 {
+        width: 33px;
+        height: 33px;
+        top: 5px;
+        right: 5px;
+      }
+
+      &-6 {
+        width: 18.6px;
+        height: 18.6px;
+        bottom: 7px;
+        left: 14px;
+      }
+
+      &-7 {
+        width: 9px;
+        height: 9px;
+        top: 30px;
+      }
+
+      &-8 {
+        width: 35px;
+        height: 35px;
+        top: 271px;
+        left: 112px;
+      }
+
+      &-9 {
+        width: 18px;
+        height: 18px;
+        top: -7px;
+        left: -7px;
+      }
+
+      &-10 {
+        width: 9.6px;
+        height: 9.6px;
+        top: 53px;
+        left: -6px;
+      }
+
+      &-11 {
+        width: 22.3px;
+        height: 22.3px;
+        bottom: -12px;
+        right: 49px;
+      }
+
+      &-12 {
+        display: none;
+      }
+
+      &-13 {
+        display: none;
+      }
+
+      &-14 {
+        width: 25px;
+        height: 25px;
+        top: -7px;
+        right: 7px;
+
+      }
+
+      &-15 {
+        width: 25px;
+        height: 25px;
+        bottom: -1px;
+        left: 7px;
+      }
+    }
+  }
+  .aboutCompany {
+    height: 524px;
+
+    &__text {
+      flex-direction: column;
+      gap: 15px;
+
+      .title, &-info {
+        width: 100%;
+      }
+    }
+
+    &__circles {
+      top: 50px;
+    }
+
+    &__circle {
+      &-title {
+        font-size: 25px;
+      }
+
+      &-text {
+        font-size: 15px;
+      }
+
+      &--1 {
+        width: 150px;
+        height: 150px;
+      }
+
+      &--2 {
+        width: 119px;
+        height: 119px;
+        left: 266px;
+        top: 320px;
+
+        .aboutCompany__circle {
+          &-title {
+            font-size: 17px;
+          }
+
+          &-text {
+            font-size: 12px;
+          }
+        }
+      }
+
+      &--3 {
+        width: 95px;
+        height: 95px;
+        top: 266px;
+        left: 362px;
+
+        .aboutCompany__circle {
+          &-title {
+            font-size: 17px;
+          }
+
+          &-text {
+            font-size: 12px;
+          }
+        }
+      }
+
+      &--7 {
+        width: 30px;
+        height: 30px;
+        top: 292px;
+        left: 291px;
+      }
+
+      &--9 {
+        top: 369px;
+        left: 235px;
+        width: 30px;
+        height: 30px;
+      }
+
+      &--10 {
+        top: 304px;
+        left: 342px;
+        width: 20px;
+        height: 20px;
+      }
+
+      &--11 {
+        top: 391px;
+        left: 380px;
+        width: 30px;
+        height: 30px;
+      }
+
+
+      &--8, &--12 {
+        display: none;
+      }
+    }
+  }
+  .facilities {
+    &__wrapper {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &__left, &__right {
+      width: 100%;
+    }
+
+    &__right {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .courierContent {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &__minCards {
+      &-item {
+        width: fit-content;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .possibilities {
+    &__card {
+      height: fit-content;
+      padding: 20px;
+
+      &-text {
+        line-height: 130%;
+      }
+
+      &-img {
+        display: none;
+      }
+    }
+  }
+  .stagesWork {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  .workingFor {
+    &__slide {
+
+    }
+  }
+  .aboutCompany {
+    &__circles {
+      top: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .partnersAll {
+    &__items {
+      margin-top: 15px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item {
+      margin: 0 auto;
+    }
+  }
+  .innovativeTechnologies {
+    &__title, &__text {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .companyMission {
+    &__left {
+      grid-gap: 15px;
+    }
+  }
+  .whyChooseUs {
+    height: 300px;
+
+    &--white {
+      height: 600px;
+    }
+
+    &__circles {
+      top: -40px;
+      transform: scale(0.7);
+
+      &--static {
+        top: 250px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .aboutCompany {
+    height: 580px;
+
+    &__circles {
+      top: 100px;
+    }
+  }
+  .contacts {
+    &__content {
+      &-box {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .newsCard {
+    &__bg {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 365px) {
+  .partnersAll{
+    &__items{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item{
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.map {
+  @include fluid(width,500px,815px);
+  @include fluid(height,250px,502px);
+  @include fluid(top,170px,200px);
+  right: 50px;
+  z-index: 99999;
+  position: absolute;
+  //transition: all .630s cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
+  //transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
+  > div {
+    position: relative;
+    transition: all .630s cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    iframe{
+      width: 100%;
+      height: 100%;
+      //filter: grayscale(1);
+    }
+
+    canvas {
+      filter: grayscale(1);
+    }
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .map {
+    top: 150px;
+  }
+}
+@media screen and (max-width: 992px) {
+
+  .map {
+    right: unset;
+    left: 0;
+    height: 300px;
+    width: 100%;
+  }
+}

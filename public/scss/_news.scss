@@ -1,0 +1,24 @@
+.news{
+  background-color: #4B5256;
+  border-radius: 60px 60px 0px 0px;
+  .breadcrumbs{
+    @include fluid(margin-top, 30px, 60px);
+    p {
+      color: $white;
+      &:before{
+        background-color: white;
+      }
+    }
+  }
+  .footer{
+    border: 1px solid $white;
+  }
+  &__wrapper{
+    &-title{
+      @include fluid(margin-top, 30px, 60px);
+    }
+  }
+  .container{
+    @include fluid(margin-bottom, 30px, 120px);
+  }
+}

@@ -1,0 +1,73 @@
+.footer {
+  border-radius: 60px 60px 0px 0px;
+  background-color: #4B5256;
+  @include fluid(height,271px,325px);
+  &__wrapper {
+    @include fluid(padding-top, 50px, 56px);
+    @include fluid(padding-bottom, 28px, 32px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include fluid(padding-bottom, 30px, 38px);
+    position: relative;
+
+    &-img {
+      width: 118px;
+      height: 30px;
+      object-fit: contain;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      background: $white;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    @include fluid(gap, 30px, 37px);
+
+    &-item {
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  &__bottom {
+    @include fluid(margin-top, 15px, 19px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-left {
+      color: $white;
+    }
+
+    &-right {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 15px, 20px);
+
+      p {
+        color: $white;
+      }
+
+      img {
+        width: 54px;
+        height: 42px;
+        object-fit: cover;
+      }
+    }
+  }
+}

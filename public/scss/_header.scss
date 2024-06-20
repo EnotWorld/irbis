@@ -1,0 +1,54 @@
+.header {
+  background-color: #fff;
+  position: relative;
+  z-index: 20;
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include fluid(padding-top, 20px, 40px);
+    @include fluid(padding-bottom, 20px, 40px);
+
+  }
+
+  &__logo {
+    @include fluid(width, 80px, 80px);
+    @include fluid(height, 60px, 60px);
+    display: block;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    @include fluid(gap, 25px, 38.38px);
+    &-item {
+      a{
+        color: $black;
+        @include fluid(font-size, 16px, 18px);
+        line-height: 140%;
+
+      }
+    }
+  }
+
+  &__contact {
+    @include fluid(padding-top, 10px, 14px);
+    @include fluid(padding-bottom, 10px, 14px);
+    @include fluid(padding-left, 17px, 20px);
+    @include fluid(padding-right, 17px, 20px);
+    background-color: $dark-grey;
+    border-radius: 29px;
+    color: $white;
+    text-align: center;
+    @include fluid(font-size, 14px, 16px);
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
+
+.container {
+}

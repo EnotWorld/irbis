@@ -1,0 +1,76 @@
+@import "mixins";
+@import "colors";
+@import "fonts";
+@import "btn";
+@import "min";
+@import "hovers";
+@import "main";
+@import "breadcrumbs";
+@import "header";
+@import "aboutCompany";
+@import "innovativeTechnologies";
+@import "aboutUs";
+@import "solutions";
+@import "facilities";
+@import "partners";
+@import "contacts";
+@import "contactUs";
+@import "aboutUsInfo";
+@import "companyMission";
+@import "whyChooseUs";
+@import "workingFor";
+@import "partnersAll";
+@import "products";
+@import "newsCard";
+@import "news";
+@import "projects";
+@import "newsDetail";
+@import "possibilities";
+@import "facilitiesCard";
+@import "productDetail";
+@import "courier";
+@import "courierContent";
+@import "stagesWork";
+@import "modal";
+@import "burgerMenu";
+@import "footer";
+@import "map";
+@import "preloader";
+@import "media";
+
+.container {
+  @include container;
+}
+
+.pp-scrollable {
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+#pp-nav {
+  display: none;
+}
+.pp-section {
+  &:not(:first-child) {
+    transform: translate3d(0px, 100%, 0px);
+  }
+  &.active {
+    transform: translate3d(0px, 0px, 0px) !important;
+    -webkit-transition: all 1000ms cubic-bezier(0.55, 0.085, 0, 0.99);
+    -moz-transition: all 1000ms cubic-bezier(0.55, 0.085, 0, 0.99);
+    -o-transition: all 1000ms cubic-bezier(0.55, 0.085, 0, 0.99);
+    transition: all 1000ms cubic-bezier(0.55, 0.085, 0, 0.99);
+    -webkit-transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+    -moz-transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+    -o-transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+    transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+  }
+}
+html {
+  font-family: "MuseoSansCyrl", sans-serif;
+  font-style: normal;
+}
+//html, body{
+//  overflow-x: hidden;
+//}

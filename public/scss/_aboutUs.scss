@@ -1,0 +1,30 @@
+.aboutUs {
+  background-color: $yellow;
+  border-radius: 60px 60px 0px 0px;
+
+
+
+  &__wrapper {
+    position: relative;
+    height: 100%;
+
+    &-bg {
+      position: absolute;
+      width: 946px;
+      height: 100%;
+      object-fit: contain;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__content {
+    @include fluid(margin-top, 30px, 60px);
+
+    &-buttons {
+    }
+  }
+}
+
+
+

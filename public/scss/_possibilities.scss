@@ -1,0 +1,80 @@
+.possibilities {
+  background: #E9ECF2;
+  .container{
+    @include fluid(margin-bottom, 30px, 123px);
+  }
+  .breadcrumbs{
+    @include fluid(margin-top, 30px, 60px);
+  }
+  &__wrapper {
+    @include fluid(margin-top, 30px, 60px);
+    &-title {
+      color: #2D3E50;
+      text-align: center;
+    }
+  }
+
+  &__content {
+    @include fluid(margin-top, 30px, 60px);
+    display: flex;
+    @include fluid(gap, 30px, 60px);
+    justify-content: space-between;
+    &-left {
+    }
+
+    &-right {
+    }
+    &-right,&-left{
+      display: flex;
+      width: 49%;
+      flex-direction: column;
+      @include fluid(gap, 15px, 30px);
+    }
+  }
+
+  &__card {
+    @include fluid(padding-top, 30px, 50px);
+    @include fluid(padding-left, 15px, 30px);
+    @include fluid(padding-right, 30px, 107px);
+    border-radius: 30px;
+
+    .btnHover{
+      @include fluid(margin-top, 20px, 40px);
+    }
+    position: relative;
+    @include fluid(height, 600px, 645px);
+    width: 100%;
+    &--yellow{
+      background-color: $yellow;
+    }
+    &--darkGrey{
+      background-color: #4B5256;
+      .possibilities__card{
+        &-title,&-text{
+          color: $white;
+        }
+      }
+    }
+    &-title {
+      color: $black;
+      @include fluid(font-size, 35px, 40px);
+      font-weight: 600;
+    }
+
+    &-text {
+      @include fluid(margin-top, 20px, 40px);
+      color: $black;
+      @include fluid(font-size, 18px, 20px);
+      font-weight: 400;
+      line-height: 155%;
+
+    }
+
+    &-img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+    }
+  }
+}
