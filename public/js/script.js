@@ -86,7 +86,7 @@ function addCards() {
   }
 
 // Выполнение запроса к серверу Node.js для получения новостей
-  fetch('http://localhost:3000/api/news')
+  fetch('https://irbis-xk7j.vercel.app/api/news')
     .then(response => response.json()) // Преобразование ответа в JSON
     .then(news => {
       console.log('Полученные новости:', news);
