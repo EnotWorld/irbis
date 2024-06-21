@@ -87,7 +87,7 @@ function addCards() {
   const currentURL = window.location.href;
   console.log(currentURL);
 // Выполнение запроса к серверу Node.js для получения новостей
-  fetch('https://irbis-xk7j.vercel.app/api/news')
+  fetch('https://api.vercel.app/api/news/')
     .then(response => response.json()) // Преобразование ответа в JSON
     .then(news => {
       console.log('Полученные новости:', news);
