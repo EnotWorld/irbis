@@ -103,6 +103,7 @@ function addCards() {
         // На остальных страницах используем логику с колонками
         displayOtherNews(news);
       }
+
     })
     .catch(response => {
       console.error('Ошибка при получении новостей:', response);
