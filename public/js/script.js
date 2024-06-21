@@ -84,9 +84,10 @@ function addCards() {
       columnIndex = (columnIndex + 1) % 3; // Переключение на следующую колонку по кругу
     });
   }
-
+  const currentURL = window.location.href;
+  console.log(currentURL);
 // Выполнение запроса к серверу Node.js для получения новостей
-  fetch('https://irbis-xk7j.vercel.app/api/news')
+  fetch(currentURL + 'api/news')
     .then(response => response.json()) // Преобразование ответа в JSON
     .then(news => {
       console.log('Полученные новости:', news);
