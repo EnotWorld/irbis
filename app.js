@@ -3,7 +3,7 @@
 const express = require('express');
 const path = require('path');
 const session = require('express-session');
-const connection = require('./db'); // Импортируем подключение к базе данных
+const db_connection = require('./db'); // Импортируем подключение к базе данных
 const apiRoutes = require('./routes/api'); // Импортируем маршруты API
 
 const app = express();
@@ -59,7 +59,7 @@ app.post('/add-news', (req, res) => {
   const values = [title, content, publishDate];
 
   // Выполнение SQL запроса
-  connection.query(sql, values, (err, result) => {
+  db_connection.query(sql, values, (err, result) => {
     if (err) {
       console.error('Ошибка при добавлении новости:', err);
       res.status(500).send('Ошибка сервера при добавлении новости');
@@ -94,5 +94,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
-const { query } = require('./db'); // Импортируем функцию для выполнения запросов к базе данных
-console.log(query);
