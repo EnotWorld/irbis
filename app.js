@@ -50,19 +50,6 @@ app.get('/admin.html', (req, res) => {
 
 // Маршрут для добавления новости в базу данных
 // Обработчик POST запроса на добавление новости
-function checkAuth(req, res, next) {
-  if (req.url === '/login.html' || req.session.authenticated) {
-// Если пользователь находится на странице login.html или авторизован, продолжаем обработку запроса
-    next();
-  } else {
-// Если пользователь не авторизован, перенаправляем на страницу login.html
-    res.redirect('/login.html');
-  }
-}
-
-// Подключение middleware для проверки авторизации ко всем маршрутам API
-app.use('/api', checkAuth);
-
 app.post('/add-news', (req, res) => {
   const { title, content, publishDate } = req.body;
   console.log('Полученные данные:', { title, content, publishDate }); // Логирование полученных данных
@@ -107,3 +94,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+const { query } = require('./db'); // Импортируем функцию для выполнения запросов к базе данных
+console.log(query);
