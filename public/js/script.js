@@ -103,6 +103,7 @@ async function fetchData() {
     console.error('Ошибка получения данных:', error);
   }
 }
+  fetchData();
 
 }
 function fullPageScrollSection() {
