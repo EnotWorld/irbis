@@ -97,7 +97,9 @@ function addCards() {
         // Если находимся на странице index.html, отображаем только первые 3 новости
         console.log('index.html');
         displayIndexNews(news);
-      } else if (window.location.pathname === '/news.html') {
+      } else if (window.location.pathname === '/') {
+        displayIndexNews(news);
+      }else if (window.location.pathname === '/news.html') {
         // На остальных страницах используем логику с колонками
         displayOtherNews(news);
       }
