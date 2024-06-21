@@ -87,23 +87,22 @@ function addCards() {
   const currentURL = window.location.href;
   console.log(currentURL);
 // Выполнение запроса к серверу Node.js для получения новостей
-  fetch('/api/news/')
-    .then(response => response.json()) // Преобразование ответа в JSON
-    .then(news => {
-      console.log('Полученные новости:', news);
-      const newsCardsContainer = document.querySelector('.newsCards');
-
-      if (newsCardsContainer.classList.contains('index-page')) {
+async function fetchData() {
+  try {
+    const response = await fetch('/api/news/');
+    const data = await response.json();
+    const newsCardsContainer = document.querySelector('.newsCards');
+    if (newsCardsContainer.classList.contains('index-page')) {
         // Если находимся на странице index.html, отображаем только первые 3 новости
         displayIndexNews(news);
       } else {
         // На остальных страницах используем логику с колонками
         displayOtherNews(news);
       }
-    })
-    .catch(error => {
-      console.error('Ошибка при получении новостей:', error);
-    });
+  } catch (error) {
+    console.error('Ошибка получения данных:', error);
+  }
+}
 
 }
 function fullPageScrollSection() {
