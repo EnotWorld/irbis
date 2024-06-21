@@ -2,10 +2,10 @@ const mysql = require('mysql');
 
 // Настройки подключения
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  database: 'IRBIS',
-  password: ''
+  host: 'amdreag1.beget.tech',
+  user: 'amdreag1_irbis',
+  database: 'amdreag1_irbis',
+  password: '32W8xZNnhnCo'
 });
 
 // Подключение к базе данных
