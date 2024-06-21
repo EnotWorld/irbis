@@ -1752,7 +1752,7 @@ legend {
 }
 .solutions__wrapper {
   display: flex;
-  margin-top: -130px;
+  width: 100%;
   gap: 20px;
 }
 .solutions__text {
@@ -1794,7 +1794,7 @@ legend {
   }
 }
 .solutions__item {
-  width: 68%;
+  width: 100%;
 }
 .solutions__nav {
   display: flex;
@@ -2406,10 +2406,8 @@ legend {
   width: 500px;
   height: 450px;
   position: relative;
-  transition: all 0.63s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  /* easeInOutCirc */
-  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  /* easeInOutCirc */
+  transition: all 0.63s cubic-bezier(0.785, 0.135, 0.15, 0.86); /* easeInOutCirc */
+  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86); /* easeInOutCirc */
   border-radius: 30px;
   overflow: hidden;
 }
@@ -7563,10 +7561,8 @@ legend {
 }
 .map > div {
   position: relative;
-  transition: all 0.63s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  /* easeInOutCirc */
-  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  /* easeInOutCirc */
+  transition: all 0.63s cubic-bezier(0.785, 0.135, 0.15, 0.86); /* easeInOutCirc */
+  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86); /* easeInOutCirc */
   border-radius: 30px;
   overflow: hidden;
   width: 100%;
@@ -7676,22 +7672,18 @@ legend {
   footer {
     height: auto !important;
   }
-
   .newsDetail {
     overflow: auto;
   }
-
   .contacts--page .contacts__wrapper {
     margin-bottom: 0;
   }
-
   .contactUs {
     border-radius: unset;
   }
   .contactUs--yellow .contactUs__wrapper {
     justify-content: center;
   }
-
   .possibilities {
     margin-top: 50px;
   }
@@ -7701,11 +7693,9 @@ legend {
   .possibilities .footer .container {
     margin-bottom: 0;
   }
-
   .partnersAll::-webkit-scrollbar {
     width: 0;
   }
-
   .stagesWork {
     border-radius: 0;
     padding-top: 30px;
@@ -7714,7 +7704,6 @@ legend {
   .stagesWork__wrapper {
     margin-bottom: 0;
   }
-
   .courierContent {
     border-radius: unset;
   }
@@ -7725,7 +7714,6 @@ legend {
   .courierContent::-webkit-scrollbar {
     width: 0;
   }
-
   .courier__wrapper {
     height: auto;
   }
@@ -7740,7 +7728,6 @@ legend {
     height: auto;
     padding-top: 50px;
   }
-
   .products {
     position: relative;
   }
@@ -7767,11 +7754,9 @@ legend {
     margin-bottom: 0;
     transform: none;
   }
-
   html {
     overflow-y: scroll;
   }
-
   .workingFor {
     padding-bottom: 50px;
     border-radius: unset;
@@ -7782,7 +7767,6 @@ legend {
   .workingFor__wrapper {
     padding-top: 50px;
   }
-
   .whyChooseUs {
     position: relative;
     border-radius: unset;
@@ -7790,7 +7774,6 @@ legend {
   .whyChooseUs__wrapper {
     margin-bottom: 500px;
   }
-
   .aboutUsInfo {
     padding-top: 50px;
     height: auto;
@@ -7801,20 +7784,17 @@ legend {
   .aboutUsInfo__left {
     margin-bottom: 50px;
   }
-
   .companyMission {
     border-radius: unset;
   }
   .companyMission__left {
     margin-bottom: 30px;
   }
-
   .innovativeTechnologies {
     border-radius: unset;
     padding-top: 50px;
     padding-bottom: 70px;
   }
-
   .facilities {
     border-radius: unset;
     overflow: auto;
@@ -7823,7 +7803,6 @@ legend {
   .facilities__right {
     margin-bottom: 30px;
   }
-
   .partners {
     overflow: auto;
     padding-top: 30px;
@@ -7841,13 +7820,11 @@ legend {
   .partners .newsCard__text, .partners .newsCard__title {
     z-index: 1;
   }
-
   .contacts {
     background-color: #4B5256;
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
   .contactUs {
     padding-top: 30px;
   }
@@ -7861,7 +7838,6 @@ legend {
   .contactUs__wrapper {
     margin-top: 0;
   }
-
   .aboutCompany {
     border-radius: unset;
     position: relative;
@@ -7870,7 +7846,6 @@ legend {
   .aboutCompany__wrapper {
     padding-top: 30px;
   }
-
   .solutions {
     border-radius: unset;
     padding-bottom: 30px;
@@ -7907,7 +7882,6 @@ legend {
   .contacts--page .contacts__map {
     margin-top: 10px;
   }
-
   .possibilities__card {
     height: 450px;
   }
@@ -7921,7 +7895,6 @@ legend {
     margin-top: 10px;
     font-size: 16px;
   }
-
   .partnersAll {
     margin-top: 100px;
   }
@@ -7951,7 +7924,6 @@ legend {
   .stagesWork__item-text {
     font-size: 14px;
   }
-
   .courierContent {
     display: flex;
   }
@@ -7981,7 +7953,6 @@ legend {
   .courierContent__card-img {
     display: none;
   }
-
   .courier {
     padding-top: 50px;
   }
@@ -8004,7 +7975,6 @@ legend {
     width: 300px;
     height: 300px;
   }
-
   .products:first-child {
     padding-top: 100px;
   }
@@ -8039,11 +8009,9 @@ legend {
   .products__card-btn:before {
     display: none;
   }
-
   .breadcrumbs {
     flex-wrap: wrap;
   }
-
   .newsDetail {
     padding-top: 70px;
     padding-bottom: 30px;
@@ -8081,7 +8049,6 @@ legend {
   .newsDetail__backNews {
     margin-top: 15px;
   }
-
   .news {
     padding-top: 55px;
   }
@@ -8124,7 +8091,6 @@ legend {
     right: -50%;
     bottom: -50%;
   }
-
   .workingFor--footer {
     padding-bottom: 0;
   }
@@ -8150,7 +8116,6 @@ legend {
   .workingFor__left-button:hover .icon-arrow {
     color: #2D3E50;
   }
-
   .btnHover:hover {
     padding-right: 70px;
     padding-left: 30px;
@@ -8168,11 +8133,9 @@ legend {
   .btnHover--transparent:hover .btnHover__icon {
     background-color: transparent;
   }
-
   .facilitiesCard:hover {
     transform: scale(1);
   }
-
   .btn:hover {
     background: #FFFFFF;
   }
@@ -8190,7 +8153,6 @@ legend {
     background-color: #2D3E50;
     color: #FFFFFF;
   }
-
   .companyMission__wrapper {
     flex-direction: column;
     margin-bottom: 30px;
@@ -8222,7 +8184,6 @@ legend {
   .companyMission__right .title {
     width: 100%;
   }
-
   .aboutUsInfo {
     position: relative;
   }
@@ -8239,7 +8200,6 @@ legend {
   .aboutUsInfo__bg {
     display: none;
   }
-
   .whyChooseUs {
     position: relative;
     border-radius: unset;
@@ -8250,7 +8210,6 @@ legend {
   .whyChooseUs__heading {
     flex-direction: column-reverse;
   }
-
   .footer {
     border-radius: 20px 20px 0 0;
   }
@@ -8279,11 +8238,9 @@ legend {
   .hoverLink:before {
     display: none;
   }
-
   .burgerMenu {
     display: block;
   }
-
   .partners {
     padding-top: 0;
   }
@@ -8347,7 +8304,6 @@ legend {
   .partners__slide:hover .partners__slide-img {
     filter: grayscale(100%);
   }
-
   .innovativeTechnologies {
     padding-top: 100px;
     position: relative;
@@ -8365,7 +8321,6 @@ legend {
   .innovativeTechnologies__wrapper {
     padding-bottom: 50px;
   }
-
   .header {
     z-index: 99;
     background-color: #FFFFFF;
@@ -8375,7 +8330,6 @@ legend {
   .header__nav, .header__contact {
     display: none;
   }
-
   .contactUs {
     border: unset;
   }
@@ -8400,7 +8354,6 @@ legend {
   .contactUs__image {
     display: none;
   }
-
   .contacts {
     background-color: #4B5256;
     padding-top: 0;
@@ -8425,7 +8378,6 @@ legend {
   .contacts__content, .contacts__map {
     width: 100%;
   }
-
   .solutions {
     padding-bottom: 0;
   }
@@ -8485,7 +8437,6 @@ legend {
   .solutions__title {
     width: 70%;
   }
-
   .facilities {
     border-radius: unset;
     margin-bottom: 40px;
@@ -8496,7 +8447,6 @@ legend {
   .facilities__right {
     margin-bottom: 0;
   }
-
   .aboutCompany {
     border-radius: unset;
     position: relative;
@@ -8559,7 +8509,6 @@ legend {
   .possibilities__content-left, .possibilities__content-right {
     width: 100%;
   }
-
   .partnersAll__items {
     margin-top: 15px;
     grid-template-columns: repeat(3, 1fr);
@@ -8568,7 +8517,6 @@ legend {
     width: 150px;
     height: 150px;
   }
-
   .products .title {
     font-size: 25px;
   }
@@ -8587,12 +8535,10 @@ legend {
   .products__card-box {
     gap: 6px;
   }
-
   .modal__answers {
     flex-direction: column;
     gap: 15px;
   }
-
   .workingFor__slide {
     height: 346px;
   }
@@ -8615,14 +8561,12 @@ legend {
   .workingFor__swiper-2 {
     width: 100%;
   }
-
   .companyMission__left-item {
     height: 200px;
   }
   .companyMission__left-item--large {
     height: 235px;
   }
-
   .whyChooseUs {
     height: 400px;
   }
@@ -8725,7 +8669,6 @@ legend {
     bottom: -1px;
     left: 7px;
   }
-
   .aboutCompany {
     height: 524px;
   }
@@ -8800,7 +8743,6 @@ legend {
   .aboutCompany__circle--8, .aboutCompany__circle--12 {
     display: none;
   }
-
   .facilities__wrapper {
     flex-direction: column;
     gap: 30px;
@@ -8833,13 +8775,11 @@ legend {
   .possibilities__card-img {
     display: none;
   }
-
   .stagesWork__content {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
-
   .aboutCompany__circles {
     top: 70px;
   }
@@ -8852,7 +8792,6 @@ legend {
   .partnersAll__item {
     margin: 0 auto;
   }
-
   .innovativeTechnologies__title, .innovativeTechnologies__text {
     width: 80%;
   }
@@ -8861,7 +8800,6 @@ legend {
   .companyMission__left {
     grid-gap: 15px;
   }
-
   .whyChooseUs {
     height: 300px;
   }
@@ -8883,7 +8821,6 @@ legend {
   .aboutCompany__circles {
     top: 100px;
   }
-
   .contacts__content-box {
     flex-direction: column;
   }
@@ -8954,5 +8891,3 @@ html {
   font-family: "MuseoSansCyrl", sans-serif;
   font-style: normal;
 }
-
-/*# sourceMappingURL=style.css.map */
