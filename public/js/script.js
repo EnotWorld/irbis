@@ -7,7 +7,9 @@ function init() {
   centerCircles();
   translateContacts();
   gallery();
-  addCards();
+  if (window.location.pathname === "/index.html" || window.location.pathname === "/news.html") {
+    addCards();
+  }
   if (document.querySelector('.phone')) {
     $('.phone').mask('+7(999) 999-9999');
   }

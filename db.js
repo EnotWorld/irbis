@@ -7,6 +7,11 @@ const db_connection = mysql.createConnection({
   database: 'amdreag1_irbis',
   password: '32W8xZNnhnCo'
 });
+const pool = mysql.createPool({
+  keepAliveInitialDelay: 10000, // 0 by default.
+  enableKeepAlive: true, // false by default.
+  maxIdle: 0
+});
 
 // Подключение к базе данных
 db_connection.connect((err) => {
