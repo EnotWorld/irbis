@@ -5,9 +5,9 @@ const path = require('path');
 const session = require('express-session');
 const db_connection = require('./db'); // Импортируем подключение к базе данных
 const apiRoutes = require('./routes/api'); // Импортируем маршруты API
-
+const cors = require('cors');
 const app = express();
-
+app.use(cors());
 // Middleware для обслуживания статических файлов из папки 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 
