@@ -20,5 +20,11 @@
     "gulp": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "node-sass": "^9.0.0"
-  }
+  },
+  "name": "irbis",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

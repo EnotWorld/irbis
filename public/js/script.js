@@ -2,7 +2,6 @@ $(window).on('load', init);
 function init() {
   fullPage();
   initSwiper();
-  alternativeContainer();
   burgerMenu();
   centerCircles();
   translateContacts();
@@ -95,13 +94,11 @@ function addCards() {
       console.log('Полученные новости:', news);
       const newsCardsContainer = document.querySelector('.newsCards');
       console.log(window.location.pathname);
-      if (window.location.pathname === '/index.html') {
+      if (window.location.pathname === '/index.html' || window.location.pathname === '') {
         // Если находимся на странице index.html, отображаем только первые 3 новости
         console.log('index.html');
         displayIndexNews(news);
-      } else if (window.location.pathname === '/') {
-        displayIndexNews(news);
-      }else if (window.location.pathname === '/news.html') {
+      } else if (window.location.pathname === '/news.html') {
         // На остальных страницах используем логику с колонками
         displayOtherNews(news);
       }
@@ -274,8 +271,12 @@ function initSwiper() {
       993: {
         slidesPerView: 2,
       },
+      600: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
       200: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 15,
       },
     },
@@ -327,61 +328,6 @@ function burgerMenu() {
     });
   }
 }
-function alternativeContainer() {
-  if (document.querySelector('.content')) {
-    var content = document.querySelectorAll('.content');
-    var container = document.querySelector('.container');
-    var domRect;
-    var result;
-    if (container) {
-      domRect = container.getBoundingClientRect();
-      result = domRect.left + 15;
-    }
-    content.forEach(function (el) {
-      var blocksLeft = el.querySelectorAll('.box__left');
-      var blocksRight = el.querySelectorAll('.box__right');
-      blocksLeft.forEach(function (el) {
-        el.style.paddingLeft = '' + result + 'px';
-      });
-      blocksRight.forEach(function (el) {
-        el.style.paddingRight = '' + result + 'px';
-      });
-      if (window.innerWidth <= 992) {
-        blocksLeft.forEach(function (el) {
-          el.style.paddingRight = '' + result + 'px';
-        });
-        blocksRight.forEach(function (el) {
-          el.style.paddingLeft = '' + result + 'px';
-        });
-      }
-    });
-    window.addEventListener('resize', function () {
-      var container = document.querySelector('.container');
-      var domRect = container.getBoundingClientRect();
-      var result = domRect.left + 15;
-
-      content.forEach(function (el) {
-        var blocksLeft = el.querySelectorAll('.box__left');
-        var blocksRight = el.querySelectorAll('.box__right');
-
-        blocksLeft.forEach(function (el) {
-          el.style.paddingLeft = '' + result + 'px';
-        });
-        blocksRight.forEach(function (el) {
-          el.style.paddingRight = '' + result + 'px';
-        });
-        if (window.innerWidth <= 992) {
-          blocksLeft.forEach(function (el) {
-            el.style.paddingRight = '' + result + 'px';
-          });
-          blocksRight.forEach(function (el) {
-            el.style.paddingLeft = '' + result + 'px';
-          });
-        }
-      });
-    });
-  }
-}
 function centerCircles() {
   if (document.querySelector('.aboutCompany__circles')) {
     let circlesBlock = document.querySelector('.aboutCompany__circles');
@@ -413,7 +359,6 @@ function centerCirclesCalculation(circlesBlock, percent) {
   const circlesLeftPosition = (windowScreen - percent) / 2;
   circlesBlock.style.left = circlesLeftPosition + 'px';
 }
-
 function translateContacts() {
   if (document.querySelector('.contacts--page')) {
     if (window.innerWidth < 992) {
