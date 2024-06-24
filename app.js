@@ -1,14 +1,11 @@
-// app.js
-
 const express = require('express');
 const path = require('path');
 const session = require('express-session');
-const pool = require('./db'); // Импортируем подключение к базе данных
 const apiRoutes = require('./routes/api'); // Импортируем маршруты API
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const { authenticate } = require('./auth'); // Импортируем функцию authenticate из auth.js
-const { db_connection } = require('./db');
+const { db_connection } = require('./db'); // Импортируем подключение к базе данных
 
 const app = express();
 const corsOptions = {
@@ -16,6 +13,7 @@ const corsOptions = {
   credentials: true,
   method: ["GET", "POST", "PUT", "DELETE"],
 }
+
 app.use(cors(corsOptions));
 // Middleware для обслуживания статических файлов из папки 'public'
 app.use(express.static(path.join(__dirname, 'public')));

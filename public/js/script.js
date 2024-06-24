@@ -1,4 +1,5 @@
 $(window).on('load', init);
+
 function init() {
   fullPage();
   initSwiper();
@@ -6,7 +7,7 @@ function init() {
   centerCircles();
   translateContacts();
   gallery();
-  if (window.location.pathname === "/index.html" || window.location.pathname === "/news.html") {
+  if (window.location.pathname === '/index.html' || window.location.pathname === '/news.html') {
     addCards();
   }
   if (document.querySelector('.phone')) {
@@ -15,6 +16,7 @@ function init() {
   fullPageScrollSection();
   $('.preloader').fadeOut('slow');
 }
+
 function addCards() {
   // Функция для форматирования даты
   function formatDate(dateString) {
@@ -85,6 +87,7 @@ function addCards() {
       columnIndex = (columnIndex + 1) % 3; // Переключение на следующую колонку по кругу
     });
   }
+
   const currentURL = window.location.href;
   console.log(currentURL);
 // Выполнение запроса к серверу Node.js для получения новостей
@@ -109,18 +112,19 @@ function addCards() {
     });
 
 }
+
 function fullPageScrollSection() {
-  $('#companyMission').click(function () {
+  $('#companyMission').click(function() {
     // задаем функцию при нажатиии на элемент <button>
     let classForSearch = 'companyMission';
     searchIndexSection(classForSearch);
   });
-  $('#whyChooseUs').click(function () {
+  $('#whyChooseUs').click(function() {
     // задаем функцию при нажатиии на элемент <button>
     let classForSearch = 'whyChooseUs';
     searchIndexSection(classForSearch);
   });
-  $('#workingFor').click(function () {
+  $('#workingFor').click(function() {
     // задаем функцию при нажатиии на элемент <button>
     let classForSearch = 'workingFor';
     searchIndexSection(classForSearch);
@@ -128,51 +132,42 @@ function fullPageScrollSection() {
 }
 
 function gallery() {
-  Fancybox.bind('.projectsGallery__item', {
-    groupAll: true,
-  });
-  Fancybox.bind('.innovativeTechnologies__link', {
-  });
+  // подключение модальных окон
   Fancybox.bind('#answ1', {
-    href: '#modal2',
+    href: '#modal2'
   });
   Fancybox.bind('#answ2', {
-    href: '#modal3',
+    href: '#modal3'
   });
 }
-
 function searchIndexSection(classForSearch) {
-  $('section').each(function (index) {
+  $('section').each(function(index) {
     if ($(this).hasClass(classForSearch)) {
       let sectionNumber = index + 1;
       $.fn.pagepiling.moveTo(sectionNumber);
     }
   });
 }
+// иницилизация свайпера
 function initSwiper() {
   if (document.querySelector('.partners__slide')) {
     const partnersSlide = document.querySelector('.partners__slide').offsetHeight;
     const swiperPartners = new Swiper('.partners__slider', {
       // loop: true,
       // slidesPerView: 5,
-      spaceBetween: 50,
-      width: partnersSlide,
+      spaceBetween: 50, width: partnersSlide,
 
       navigation: {
-        nextEl: '.partners__nav-icon--right',
-        prevEl: '.partners__nav-icon--left',
-      },
-      breakpoints: {
+        nextEl: '.partners__nav-icon--right', prevEl: '.partners__nav-icon--left'
+      }, breakpoints: {
         1920: {
-          spaceBetween: 50,
-        },
-        992: {
-          spaceBetween: 50,
-        },
-        180: {
-          spaceBetween: 15,
-        },
-      },
+          spaceBetween: 50
+        }, 992: {
+          spaceBetween: 50
+        }, 180: {
+          spaceBetween: 15
+        }
+      }
     });
   }
   if (document.querySelector('.solutions__item')) {
@@ -181,115 +176,77 @@ function initSwiper() {
     solutionsSwiper.style.width = solutionsItem.offsetWidth + 'px';
   }
   const swiperWorkingFor = new Swiper('.workingFor__swiper', {
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 30,
-    navigation: {
-      nextEl: '.workingFor__left-button--right',
-      prevEl: '.workingFor__left-button--left',
-    },
-    breakpoints: {
+    loop: true, slidesPerView: 3, spaceBetween: 30, navigation: {
+      nextEl: '.workingFor__left-button--right', prevEl: '.workingFor__left-button--left'
+    }, breakpoints: {
       993: {
-        slidesPerView: 3,
-      },
-      769: {
-        slidesPerView: 1.5,
-      },
-      577: {
-        slidesPerView: 2,
-      },
-      420: {
-        slidesPerView: 1.5,
-      },
-      180: {
-        slidesPerView: 1,
-      },
-    },
+        slidesPerView: 3
+      }, 769: {
+        slidesPerView: 1.5
+      }, 577: {
+        slidesPerView: 2
+      }, 420: {
+        slidesPerView: 1.5
+      }, 180: {
+        slidesPerView: 1
+      }
+    }
   });
 
   const swiperWorkingFor2 = new Swiper('.workingFor__swiper-2', {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesOffsetAfter: 50,
-    navigation: {
-      nextEl: '.workingFor__left-button--right',
-      prevEl: '.workingFor__left-button--left',
-    },
-    breakpoints: {
+    slidesPerView: 3, spaceBetween: 30, slidesOffsetAfter: 50, navigation: {
+      nextEl: '.workingFor__left-button--right', prevEl: '.workingFor__left-button--left'
+    }, breakpoints: {
       993: {
-        slidesPerView: 2.1,
-      },
-      769: {
-        slidesPerView: 1.5,
-      },
-      577: {
-        slidesPerView: 1.5,
-      },
-      420: {
-        slidesPerView: 1.5,
-      },
-      180: {
-        slidesPerView: 1.2,
-      },
-    },
+        slidesPerView: 2.1
+      }, 769: {
+        slidesPerView: 1.5
+      }, 577: {
+        slidesPerView: 1.5
+      }, 420: {
+        slidesPerView: 1.5
+      }, 180: {
+        slidesPerView: 1.2
+      }
+    }
   });
   const swiperWorkingForNews = new Swiper('.workingFor__swiper--news', {
-    loop: true,
-    slidesPerView: 2.5,
-    spaceBetween: 30,
-    navigation: {
-      nextEl: '.workingFor__left-button--right',
-      prevEl: '.workingFor__left-button--left',
-    },
-    breakpoints: {
+    loop: true, slidesPerView: 2.5, spaceBetween: 30, navigation: {
+      nextEl: '.workingFor__left-button--right', prevEl: '.workingFor__left-button--left'
+    }, breakpoints: {
       993: {
-        slidesPerView: 3,
-      },
-      577: {
-        slidesPerView: 2,
-      },
-      420: {
-        slidesPerView: 1.5,
-      },
-      180: {
-        slidesPerView: 1,
-      },
-    },
+        slidesPerView: 3
+      }, 577: {
+        slidesPerView: 2
+      }, 420: {
+        slidesPerView: 1.5
+      }, 180: {
+        slidesPerView: 1
+      }
+    }
   });
   const swiperSolutions = new Swiper('.solutions__slider', {
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 30,
-    navigation: {
-      nextEl: '.solutions__nav-icon--right',
-      prevEl: '.solutions__nav-icon--left',
-    },
-    breakpoints: {
+    loop: true, slidesPerView: 3, spaceBetween: 30, navigation: {
+      nextEl: '.solutions__nav-icon--right', prevEl: '.solutions__nav-icon--left'
+    }, breakpoints: {
       1600: {
-        slidesPerView: 3,
-      },
-      993: {
-        slidesPerView: 2,
-      },
-      600: {
-        slidesPerView: 1,
-        spaceBetween: 15,
-      },
-      200: {
-        slidesPerView: 1,
-        spaceBetween: 15,
-      },
-    },
+        slidesPerView: 3
+      }, 993: {
+        slidesPerView: 2
+      }, 600: {
+        slidesPerView: 1, spaceBetween: 15
+      }, 200: {
+        slidesPerView: 1, spaceBetween: 15
+      }
+    }
   });
 }
+// иницилизация фулл пейджа
 function fullPage() {
   if (document.documentElement.offsetWidth > 1200) {
     if (document.querySelector('.products__wrapper')) {
       $('.products__cards').pagepiling({
-        direction: 'vertical',
-        sectionSelector: '.products__card',
-        easing: 'linear',
-        scrollingSpeed: 200,
+        direction: 'vertical', sectionSelector: '.products__card', easing: 'linear', scrollingSpeed: 200
       });
 
       const productsCard = document.querySelectorAll('.products__card');
@@ -313,21 +270,21 @@ function fullPage() {
       observer.observe(productsCardLast, { attributes: true, attributeFilter: ['class'] });
     } else {
       $('#pagepiling').pagepiling({
-        direction: 'vertical',
-        sectionSelector: 'section',
-        easing: 'linear',
-        scrollingSpeed: 200,
+        direction: 'vertical', sectionSelector: 'section', easing: 'linear', scrollingSpeed: 200
       });
     }
   }
 }
+
 function burgerMenu() {
   if (992 >= window.innerWidth) {
-    document.querySelector('.burgerMenu').addEventListener('click', function () {
+    document.querySelector('.burgerMenu').addEventListener('click', function() {
       document.querySelector('.burgerMenu').classList.toggle('active');
     });
   }
 }
+
+// функция, ищет центр блока и просчитывает расстояние блока с кружочками и далее ставит их на место в зависимости от ширины экрана
 function centerCircles() {
   if (document.querySelector('.aboutCompany__circles')) {
     let circlesBlock = document.querySelector('.aboutCompany__circles');
@@ -359,6 +316,7 @@ function centerCirclesCalculation(circlesBlock, percent) {
   const circlesLeftPosition = (windowScreen - percent) / 2;
   circlesBlock.style.left = circlesLeftPosition + 'px';
 }
+// Функция, которая просчитывает где должна находится карта на странице с контактами
 function translateContacts() {
   if (document.querySelector('.contacts--page')) {
     if (window.innerWidth < 992) {
@@ -370,31 +328,17 @@ function translateContacts() {
       let mapHeight = map.offsetHeight;
 
       map.style.width = document.querySelector('.header__wrapper').offsetWidth - contactsPageWrapper.offsetLeft + 'px';
-      map.style.top =
-        document.querySelector('.header__wrapper').offsetHeight + document.querySelector('.breadcrumbs').offsetHeight + document.querySelector('.contacts__wrapper-box').offsetHeight + 40 + 'px';
+      map.style.top = document.querySelector('.header__wrapper').offsetHeight + document.querySelector('.breadcrumbs').offsetHeight + document.querySelector('.contacts__wrapper-box').offsetHeight + 40 + 'px';
       map.style.left = contactsPageWrapper.offsetLeft + 'px';
 
-      contactsPageWrapper.style.height =
-        mapHeight +
-        document.querySelector('.header__wrapper').offsetHeight +
-        document.querySelector('.breadcrumbs').offsetHeight +
-        document.querySelector('.contacts__wrapper-box').offsetHeight +
-        60 +
-        'px';
+      contactsPageWrapper.style.height = mapHeight + document.querySelector('.header__wrapper').offsetHeight + document.querySelector('.breadcrumbs').offsetHeight + document.querySelector('.contacts__wrapper-box').offsetHeight + 60 + 'px';
 
       addEventListener('resize', () => {
         map.style.width = document.querySelector('.header__wrapper').offsetWidth + 'px';
-        map.style.top =
-          document.querySelector('.header__wrapper').offsetHeight + document.querySelector('.breadcrumbs').offsetHeight + document.querySelector('.contacts__wrapper-box').offsetHeight + 40 + 'px';
+        map.style.top = document.querySelector('.header__wrapper').offsetHeight + document.querySelector('.breadcrumbs').offsetHeight + document.querySelector('.contacts__wrapper-box').offsetHeight + 40 + 'px';
         map.style.left = contactsPageWrapper.offsetLeft + 'px';
 
-        contactsPageWrapper.style.height =
-          mapHeight +
-          document.querySelector('.header__wrapper').offsetHeight +
-          document.querySelector('.breadcrumbs').offsetHeight +
-          document.querySelector('.contacts__wrapper-box').offsetHeight +
-          60 +
-          'px';
+        contactsPageWrapper.style.height = mapHeight + document.querySelector('.header__wrapper').offsetHeight + document.querySelector('.breadcrumbs').offsetHeight + document.querySelector('.contacts__wrapper-box').offsetHeight + 60 + 'px';
       });
     }
   }
